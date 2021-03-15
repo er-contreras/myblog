@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.square-left {
+  background: rgb(104, 104, 104);
+  width: 235px;
+  height: 600px;
+  position: absolute;
+  left: 0;
+}
+
+.square-right {
+  background: rgb(104, 104, 104);
+  width: 235px;
+  height: 600px;
+  position: absolute;
+  right: 0;
+}
+
+.ball, .ball2 {
+  background: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:root {
+  --background:silver;
+  --background-form: tomato;
+}
+
+html {
+  font-size: 15px;
+  background-color: #868686;
+}
+
+h1 {
+  box-shadow: 0px 12px 100px 0px rgb(253, 0, 0);
+  text-align: center;
+  border-radius: 50px;
+  background-color: silver;
+  padding: 0 5px;
+}
+
+h1:hover {
+  color: rgb(214, 0, 0);
+}
+
+.navlinks {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  background-color: hsla(246, 87%, 9%, 0.815);
+  /* background: linear-gradient(90deg, #62c5c5, #0b6369); */
+  /* background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png); */
+}
+
+.me {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  border-radius: 50%;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
+}
+
+audio {
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  color: rgb(143, 143, 143); 
+}
+
+.red-text {
+  color: var(--background-form);
+}
+
+.smaller-img {
+  display: block; 
+  width: 100px;
+  margin: 30px auto;
+  border-radius: 50%;
+  padding: 1%;
+  background-color: rgb(56, 56, 56);
+  box-shadow: 0px 0px 0px 5px  rgba(0, 195, 255, 0.603),
+              0px 0px 0px 10px  rgba(255, 0, 0, 0.582),
+              0px 0px 0px 15px rgba(6, 71, 3, 0.541);
+  z-index: 1;
+}
+
+.smaller-img:hover {
+  transform: scale(.5);
+}
+
+h2 {
+  font-family: Lobster;
+  font-size: 70px;
+}
+
+p {
+  /* font-size: 16px; */
+  width: 70%;
+  background-color: rgba(45, 45, 45, 0.082);
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+a {
+  color: black;
+  /* z-index: 2; */
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+button {
+  background-color: rgb(47, 0, 255);
+  color: white;
+}
+
+button:hover {
+  animation-name: background-color;
+  animation-duration: 900ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: tomato;
+  }
+}
+
+
+.thick-green-border {
+  border: 2px solid rgba(1, 66, 77, 0.76);
+}
+
+.silver-background {
+  background: silver; /* fallback background */
+  background-color: var(--background);
+  padding: 10em;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+#text-photo-form {
+  background-color: var(--background-form) !important;
+  padding: 10em;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+[type='checkbox'] {
+margin: 10px 0px 15px 0px;
+}
+
+.boxshadow-link {
+  margin: 10px;
+  border-radius: 5px;
+  opacity: 0.5;
+  /* text-align: center; */
+  /* float: left; */
+}
+
+
+#gradient-color {
+  border-radius: 10px;
+  width: 100%;
+  height: 10px;
+  /* margin: 50 auto; */
+  background: 
+  repeating-linear-gradient(45deg, #ffff00 0px, yellow 40px,
+  black 40px, black 80px);
+  /* transform: skewX(5deg); */
+  /* transform: skewY(-5deg); */
+}
+
+#moon {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* display: block; */
+  margin: 50px auto;
+  border-radius: 50%;
+  box-shadow: 95px 30px 0px 0px rgba(0, 0, 0, 0.589);
+  /* Animation Colors */
+  animation-name: rainbow;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* animation-delay: 2s; */
+  /* animation-fill-mode: both; */
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: rgb(218, 185, 0);
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    background-color: rgb(128, 0, 0);
+    top: 50px;
+    left: 25px;
+    opacity: 0.5;
+  }
+  100% {
+    background-color: rgba(255, 102, 0, 0.815);
+    top: 0px;
+    left: -25px;
+  }
+}
+
+.heart-back {
+  background-color: tomato;
+  padding: 10em;
+  border-radius: 50px;
+  animation-name: heart-back;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.heart {
+  position: relative;
+  margin: auto;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(165, 0, 0);
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  /* animation-timing-function: ease-out; */
+}
+
+.heart::after {
+  background-color: rgb(165, 0, 0);
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+
+.heart::before {
+  content: '';
+  background-color: rgb(165, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(0.6) rotate(-45deg);
+  }
+}
+
+@keyframes heart-back {
+  50% {
+    background: rgba(255, 99, 71, 0.767);
+  }
+}
+
+/* Applied Visual Design: Bezier Curve to Move a Graphic */
+.balls{
+  /* position: absolute; */
+  border-radius: 50%;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  animation-name: bounce;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* overflow: hidden; */
+  z-index: 1;
+}
+
+#red {
+  background: rgba(255, 0, 0, 0.671);
+  left: 27%;
+  animation-timing-function: linear;
+}
+
+#blue {
+  background: rgba(0, 0, 255, 0.658);
+  left: 68.5%;
+  animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 249px;
+  }
+}
