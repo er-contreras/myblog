@@ -98,10 +98,6 @@ footer {
   margin: 50px 0 0 0;
 }
 
-.red-text {
-  color: var(--background-form);
-}
-
 .smaller-img {
   display: block; 
   width: 100px;
