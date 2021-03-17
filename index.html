@@ -10,142 +10,150 @@
   rel="stylesheet" type="text/css">
 </head>
 <body>
-
-  <div class="square-left">
-    <div class="ball"></div>
-  </div>
-
-  <div class="square-right">
-    <div class="ball2"></div>
-  </div>
-
-
-  <div id="box">
-    <!-- Advise -->
-    <!-- Use verbs instead of nouns to describe a 'id' or 'class'. -->
-    <header>
-      <h1>My Blog</h1>
-
-      <nav class="navlinks">
-        <!-- We need some navigation bar here.  -->
-        <a class="navlinks" href="#thinking">Thoughts</a> 
-        <a class="navlinks" href="#sometimes">Sometimes</a>
-        <a class="navlinks" href="#text-photo-form">Text Photo Text</a> 
-      </nav>
-    </header>
-
-    <main>
-      <figure>
-        <a href="#"><img class="smaller-img thick-green-border" 
-          src="/images/gif Eclipse WW.gif" alt="white iris">
-        </a>
-
-        <a href="/images/erick's red.jpg" target="_blank">
-          <img class="me" src="/images/erick's red.jpg" alt="Beutiful day in my home">
-        </a>
-        <figcaption>This is me in a sunny day</figcaption>
-      </figure>
+  <div id="father">
+    <!-- Using Flex -->
+    <div id="box-container">
+      <div id="box-1"></div>
+      <div id="box-2"></div>
+    </div>
     
-      <!-- Here we are adding audio and audio controls  -->
-      <audio controls>
-        <source src="/sounds/The Wolven Storm (Priscilla's song).mp3" 
-        type="audio/mpeg"/>
-      </audio>
+    <!-- Using Position relative and absolute -->
+    <div class="square-left">
+      <div class="ball1">2</div>
+    </div>
+    
+    <div class="square-right">
+      <div class="ball2">1</div>
+    </div>
+    
+    
+    <div id="box">
+      <!-- Advise -->
+      <!-- Use verbs instead of nouns to describe a 'id' or 'class'. -->
+      <header>
+        <h1>My Blog</h1>
 
-      <article class="silver-background">
-        <h2>Some thoughts to share.</h2>
-        <hr><br>
-          <u>Sometimes</u> there is <strong>someone special</strong> to you, he or she does things that maybe hurt you,
-          but we don't realize that if we look more deeply inside of everyone of us we can noticed
-          that we are thinking, saying random stuff apparently, but it is just
-          the accumulation of the first knowledge in our first steps in this world.
+        <nav class="navlinks">
+          <!-- We need some navigation bar here.  -->
+          <a class="navlinks" href="#thinking">Thoughts</a> 
+          <a class="navlinks" href="#sometimes">Sometimes</a>
+          <a class="navlinks" href="#text-photo-form">Text Photo Text</a> 
+        </nav>
+      </header>
+
+      <main>
+        <figure>
+          <a href="#"><img class="smaller-img thick-green-border" 
+            src="/images/gif Eclipse WW.gif" alt="white iris">
+          </a>
+
+          <a href="/images/erick's red.jpg" target="_blank">
+            <img class="me" src="/images/erick's red.jpg" alt="Beutiful day in my home">
+          </a>
+          <figcaption>This is me in a sunny day</figcaption>
+        </figure>
+      
+        <!-- Here we are adding audio and audio controls  -->
+        <audio controls>
+          <source src="/sounds/The Wolven Storm (Priscilla's song).mp3" 
+          type="audio/mpeg"/>
+        </audio>
+
+        <article class="silver-background">
+          <h2>Some thoughts to share.</h2>
+          <hr><br>
+            <u>Sometimes</u> there is <strong>someone special</strong> to you, he or she does things that maybe hurt you,
+            but we don't realize that if we look more deeply inside of everyone of us we can noticed
+            that we are thinking, saying random stuff apparently, but it is just
+            the accumulation of the first knowledge in our first steps in this world.
+        </article>
+
+        <div id="gradient-color"></div>
+
+        <article id="sometimes" class="silver-background">
+          <h2><s>Something more to say.</s> Sometimes the things come through</h2>
+          <hr><br>
+            <em>To be where we want, first we been working and building one path. Imagine if we are
+            looking to horizon and we are not realizing that we are not having a path to set foot,
+            it would be just a dream. With this analogy I pretend explain the daily day when we are
+            working on a project. We want first finish the project before started. We are not realizing
+            that if we not know the process and the tools we not advance to our aims. So we need to 
+            parse what knowledge we needed. Despair only bring us waste of time and frustration.
+            If we have a doubt of how to do something start making questions of what we need to
+            do to reach our aims <time datatime="2021-03-07">Sunday, September 07<sup>Sun</sup></time>.
+            Try to resolve a little issue that is important to advance a little bit more and then step by step you can reach your goal. Some issues take more
+            time than others so take your time to figure it out.</em>
       </article>
 
-      <div id="gradient-color"></div>
+        <!--Where the submit will go ---------------------------------->
+        <form id="text-photo-form" action="https://freecatphotoapp.com/submit-cat-photo"> 
+          <fieldset>
+            <legend>Do you prefer Solar Eclipse or Lunar Eclipse?</legend>
+            <input type="text" placeholder="Eclipse" required>
+            <button type="submit">Submit</button>
 
-      <article id="sometimes" class="silver-background">
-        <h2><s>Something more to say.</s> Sometimes the things come through</h2>
-        <hr><br>
-          <em>To be where we want, first we been working and building one path. Imagine if we are
-          looking to horizon and we are not realizing that we are not having a path to set foot,
-          it would be just a dream. With this analogy I pretend explain the daily day when we are
-          working on a project. We want first finish the project before started. We are not realizing
-          that if we not know the process and the tools we not advance to our aims. So we need to 
-          parse what knowledge we needed. Despair only bring us waste of time and frustration.
-          If we have a doubt of how to do something start making questions of what we need to
-          do to reach our aims <time datatime="2021-03-07">Sunday, September 07<sup>Sun</sup></time>.
-          Try to resolve a little issue that is important to advance a little bit more and then step by step you can reach your goal. Some issues take more
-          time than others so take your time to figure it out.</em>
-    </article>
+            <!-- Radio Button ----------------------------------------->
+            <label for="solar">Solar
+              <input id="solar" type="radio" name="solar-lunar"
+              value="solar" checked>
+            </label>
+        
+            <label for="lunar">Lunar
+              <input id="lunar" type="radio" name="solar-lunar"
+              value="lunar">
+            </label>
+        
+            <br>
+            <!-- Checkbox  --------------------------------------------->
+            <label for="loving">Loving
+              <input id ="loving"name="personality" type="checkbox"
+              value="loving" checked>
+            </label>
+        
+            <label for="cats">Cats
+              <input id ="cats" name="personality" type="checkbox" 
+              value="cats">
+            </label>
+        
+            <label for="interprenur">Interpreneur
+              <input id ="interprenur"name="personality" type="checkbox" 
+              value="interprenur">
+            </label>
 
-      <!--Where the submit will go ---------------------------------->
-      <form id="text-photo-form" action="https://freecatphotoapp.com/submit-cat-photo"> 
-        <fieldset>
-          <legend>Do you prefer Solar Eclipse or Lunar Eclipse?</legend>
-          <input type="text" placeholder="Eclipse" required>
-          <button type="submit">Submit</button>
+            <br>
+            <!-- Date ------------------------------------------------>
+            <label for="pickdate"> Preferred Date for a eclipse
+              <input type="date" id="pickdate" name="date">
+            </label>
+          </fieldset>
+        </form> 
 
-          <!-- Radio Button ----------------------------------------->
-          <label for="solar">Solar
-            <input id="solar" type="radio" name="solar-lunar"
-            value="solar" checked>
-          </label>
-      
-          <label for="lunar">Lunar
-            <input id="lunar" type="radio" name="solar-lunar"
-            value="lunar">
-          </label>
-      
-          <br>
-          <!-- Checkbox  --------------------------------------------->
-          <label for="loving">Loving
-            <input id ="loving"name="personality" type="checkbox"
-            value="loving" checked>
-          </label>
-      
-          <label for="cats">Cats
-            <input id ="cats" name="personality" type="checkbox" 
-            value="cats">
-          </label>
-      
-          <label for="interprenur">Interpreneur
-            <input id ="interprenur"name="personality" type="checkbox" 
-            value="interprenur">
-          </label>
-
-          <br>
-          <!-- Date ------------------------------------------------>
-          <label for="pickdate"> Preferred Date for a eclipse
-            <input type="date" id="pickdate" name="date">
-          </label>
-        </fieldset>
-      </form> 
-
-      <!-- Here start the eclipse -------------------------------------->
-      <div class="sun">
-        <div class="moon">
+        <!-- Here start the eclipse -------------------------------------->
+        <div class="sun">
+          <div class="moon">
+          </div>
         </div>
-      </div>
 
-      <!-- Here start the Heart ---------------------------------------->
-      <div class="heart-back">
-        <div class="heart"></div>
-      </div>
+        <!-- Here start the Heart ---------------------------------------->
+        <div class="heart-back">
+          <div class="heart"></div>
+        </div>
 
-      <!-- Here start the balls  --------------------------------------->
-      <div class="balls" id= "red"></div>
+        <!-- Here start the balls  --------------------------------------->
+        <div class="balls" id= "red"></div>
 
-      <div class="balls" id= "blue"></div>
+        <div class="balls" id= "blue"></div>
 
-    </main>
+      </main>
 
-    <!-- Footer ----------------------------------------------------->
-    <footer>
-      <!-- We should put here some copyright or something -->
-      &copy; 2021 Erick Contreras
-    </footer>
-      
-  </div>
+      <!-- Footer ----------------------------------------------------->
+      <footer>
+        <!-- We should put here some copyright or something -->
+        &copy; 2021 Erick Contreras
+      </footer>
+        
+    </div>
+  </div>  
   <script src="/scripts/script.js"></script>
 </body>
 </html>
