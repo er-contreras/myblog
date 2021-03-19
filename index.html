@@ -18,59 +18,52 @@
     </div>
     
     <!-- Using Position relative and absolute -->
-    <div class="square-left">
-      <div class="ball1">2</div>
-    </div>
-    
-    <div class="square-right">
-      <div class="ball2">1</div>
-    </div>
-    
-    
-    <div id="box">
-      <!-- Advise -->
-      <!-- Use verbs instead of nouns to describe a 'id' or 'class'. -->
+    <div id="content">
+
       <header>
         <h1>My Blog</h1>
-
-        <nav class="navlinks">
-          <!-- We need some navigation bar here.  -->
-          <a class="navlinks" href="#thinking">Thoughts</a> 
-          <a class="navlinks" href="#sometimes">Sometimes</a>
-          <a class="navlinks" href="#text-photo-form">Text Photo Text</a> 
-        </nav>
       </header>
 
-      <main>
-        <figure>
-          <a href="#"><img class="smaller-img thick-green-border" 
-            src="/images/gif Eclipse WW.gif" alt="white iris">
-          </a>
+      <nav>
+        <!-- We need some navigation bar here.  -->
+        <a href="#thinking">Thoughts</a> 
+        <a href="#sometimes">Sometimes</a>
+        <a href="#text-photo-form">Text Photo Text</a> 
+      </nav>
 
-          <a href="/images/erick's red.jpg" target="_blank">
-            <img class="me" src="/images/erick's red.jpg" alt="Beutiful day in my home">
-          </a>
-          <figcaption>This is me in a sunny day</figcaption>
-        </figure>
+      <figure>
+        <a href="#"><img class="smaller-img" 
+          src="/images/gif Eclipse WW.gif" alt="white iris">
+        </a>
+        
+        <a href="/images/erick's red.jpg" target="_blank">
+          <img class="me" src="/images/erick's red.jpg" alt="Beutiful day in my home">
+        </a>
+        <figcaption>This is me in a sunny day</figcaption>
+      </figure>
       
-        <!-- Here we are adding audio and audio controls  -->
+      <!-- Here we are adding audio and audio controls  -->
+      <div id="audio">
         <audio controls>
           <source src="/sounds/The Wolven Storm (Priscilla's song).mp3" 
           type="audio/mpeg"/>
         </audio>
-
-        <article class="silver-background">
-          <h2>Some thoughts to share.</h2>
+      </div>
+      
+      <main>
+        <article class="article-background">
+          <h2>Achieving virtue.</h2>
           <hr><br>
-            <u>Sometimes</u> there is <strong>someone special</strong> to you, he or she does things that maybe hurt you,
-            but we don't realize that if we look more deeply inside of everyone of us we can noticed
-            that we are thinking, saying random stuff apparently, but it is just
-            the accumulation of the first knowledge in our first steps in this world.
+            <u>Virtue</u> opposes <strong>vice</strong>, it has great importance
+            to ethical life. 
+
+            Vice is any practice, conduct or habit that is considered a fault,
+            a defect, a disease, or a bad habit.
         </article>
 
         <div id="gradient-color"></div>
 
-        <article id="sometimes" class="silver-background">
+        <article class="article-background">
           <h2><s>Something more to say.</s> Sometimes the things come through</h2>
           <hr><br>
             <em>To be where we want, first we been working and building one path. Imagine if we are
@@ -83,56 +76,16 @@
             do to reach our aims <time datatime="2021-03-07">Sunday, September 07<sup>Sun</sup></time>.
             Try to resolve a little issue that is important to advance a little bit more and then step by step you can reach your goal. Some issues take more
             time than others so take your time to figure it out.</em>
-      </article>
-
-        <!--Where the submit will go ---------------------------------->
-        <form id="text-photo-form" action="https://freecatphotoapp.com/submit-cat-photo"> 
-          <fieldset>
-            <legend>Do you prefer Solar Eclipse or Lunar Eclipse?</legend>
-            <input type="text" placeholder="Eclipse" required>
-            <button type="submit">Submit</button>
-
-            <!-- Radio Button ----------------------------------------->
-            <label for="solar">Solar
-              <input id="solar" type="radio" name="solar-lunar"
-              value="solar" checked>
-            </label>
-        
-            <label for="lunar">Lunar
-              <input id="lunar" type="radio" name="solar-lunar"
-              value="lunar">
-            </label>
-        
-            <br>
-            <!-- Checkbox  --------------------------------------------->
-            <label for="loving">Loving
-              <input id ="loving"name="personality" type="checkbox"
-              value="loving" checked>
-            </label>
-        
-            <label for="cats">Cats
-              <input id ="cats" name="personality" type="checkbox" 
-              value="cats">
-            </label>
-        
-            <label for="interprenur">Interpreneur
-              <input id ="interprenur"name="personality" type="checkbox" 
-              value="interprenur">
-            </label>
-
-            <br>
-            <!-- Date ------------------------------------------------>
-            <label for="pickdate"> Preferred Date for a eclipse
-              <input type="date" id="pickdate" name="date">
-            </label>
-          </fieldset>
-        </form> 
-
+        </article>
+      </main>
+      
         <!-- Here start the eclipse -------------------------------------->
+      <div id="eclipse">
         <div class="sun">
           <div class="moon">
           </div>
         </div>
+      </div>
 
         <!-- Here start the Heart ---------------------------------------->
         <div class="heart-back">
@@ -143,8 +96,6 @@
         <div class="balls" id= "red"></div>
 
         <div class="balls" id= "blue"></div>
-
-      </main>
 
       <!-- Footer ----------------------------------------------------->
       <footer>

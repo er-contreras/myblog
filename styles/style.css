@@ -7,63 +7,43 @@
 
 /* Here star the divs left and right ---------------------------------> */
 #father {
-  font-size: 15px;
-  background-color: #2e2e2e;
-  position: relative;
+  background-color: #c0b40b;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #box-container {
   background-color: #ffffff;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  height: 500px;
-  /* justify-content: space-between; */
-  z-index: -1;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 #box-1 {
   background-color: red;
-  width: 25%;
-  height: 100%;
-  display: flex;
+  width: 350px;
+  height: 200px;
 }
 
 #box-2 {
-  background-color: rgb(11, 88, 15);
-  width: 25%;
-  height: 100%;
+  background-color: rgb(14, 105, 19);
+  width: 350px;
+  height: 200px;
 }
 
-.square-left {
-  background: rgb(104, 104, 104);
-  width: 235px;
-  height: 600px;
-  position: absolute;
-  left: 0;
-  /* z-index: -1; */
-}
-
-.square-right {
-  background: rgb(104, 104, 104);
-  width: 235px;
-  height: 600px;
-  position: absolute;
-  right: 0;
-  /* z-index: -1; */
-}
-
-.ball1, .ball2 {
-  background: rgb(255, 255, 255);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  line-height: 50px;
-  font-size: 30px;
+#content {
+  width: 50%;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  background-color: hsl(246, 83%, 16%);
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* background: linear-gradient(90deg, #62c5c5, #0b6369); */
+  /* background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png); */
 }
 
 /* Here is the shortcut? -------------------------------------- */
@@ -72,158 +52,106 @@
   --background-form: tomato;
 }
 
-
-h1 {
+#content header {
   box-shadow: 0px 12px 100px 0px rgb(253, 0, 0);
   text-align: center;
-  border-radius: 50px;
-  background-color: silver;
-  padding: 0 5px;
+  border-radius: 2px;
+  background-color: rgb(182, 182, 182);
+  padding: 5px;
+}
+
+#content nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+nav a {
+  color: white;
 }
 
 h1:hover {
   color: rgb(214, 0, 0);
+  cursor: pointer;
 }
 
-.navlinks {
-  text-align: center;
+#content figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  color: white;
+}
+
+figure a {
   color: white;
   text-decoration: none;
-  margin: 20px;
-}
-
-#box {
-  width: 600px;
-  margin: 0 auto;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
-  background-color: hsla(246, 87%, 9%, 0.815);
-  /* background: linear-gradient(90deg, #62c5c5, #0b6369); */
-  /* background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png); */
-}
-
-.me {
-  display: block;
-  width: 200px;
-  margin: 0 auto;
-  padding: 20px 20px 20px 20px;
-  border-radius: 50%;
-}
-
-figcaption {
-  text-align: center;
-  color: white;
-}
-
-audio {
-  display: block;
-  margin: 10px auto;
-  padding: 15px;
-}
-
-footer {
-  text-align: center;
-  color: rgb(143, 143, 143); 
-  margin: 50px 0 0 0;
 }
 
 .smaller-img {
-  display: block; 
   width: 100px;
-  margin: 30px auto;
   border-radius: 50%;
   padding: 1%;
   background-color: rgb(56, 56, 56);
   box-shadow: 0px 0px 0px 5px  rgba(0, 195, 255, 0.603),
-              0px 0px 0px 10px  rgba(255, 0, 0, 0.582),
-              0px 0px 0px 15px rgba(6, 71, 3, 0.541);
-  z-index: 1;
+  0px 0px 0px 10px  rgba(255, 0, 0, 0.582),
+  0px 0px 0px 15px rgba(6, 71, 3, 0.541);
 }
 
 .smaller-img:hover {
   transform: scale(.5);
 }
 
+.me {
+  width: 200px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 50%;
+}
+
+
+#audio {
+  display: flex;
+  justify-content: center;
+}
+
+audio {
+  padding: 15px;
+}
+
 h2 {
-  font-family: Lobster;
   font-size: 20px;
 }
 
 p {
-  /* font-size: 16px; */
   width: 70%;
-  background-color: rgba(45, 45, 45, 0.082);
   border-radius: 5px;
-  font-weight: 900;
-}
-
-a {
-  color: black;
-  /* z-index: 2; */
 }
 
 a:hover {
   color: rgb(255, 0, 0);
 }
 
-button {
-  background-color: rgb(47, 0, 255);
-  color: white;
-}
-
-/* Here is the submit button ----------------------------------> */
-button:hover {
-  animation-name: background-color;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-}
-
 @keyframes background-color {
   100% {
-    background-color: tomato;
+    background-color: rgb(143, 21, 0);
   }
 }
-/* ------------------------------------------------------------> */
 
-.thick-green-border {
-  border: 2px solid rgba(1, 66, 77, 0.76);
-}
-
-.silver-background {
-  background: silver; /* fallback background */
+.article-background {
   background-color: var(--background);
-  padding: 2em;
+  padding: 20px;
   margin: 10px;
   border-radius: 10px;
   text-align: justify;
-  line-height: 20px;
+  line-height: 15px;
 }
-
-#text-photo-form {
-  background-color: var(--background-form) !important;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-[type='checkbox'] {
-margin: 10px 0px 15px 0px;
-}
-
-.boxshadow-link {
-  margin: 10px;
-  border-radius: 5px;
-  opacity: 0.5;
-  /* text-align: center; */
-  /* float: left; */
-}
-
 
 #gradient-color {
   border-radius: 10px;
+  width: 100%;
   height: 10px;
   background: 
-  repeating-linear-gradient(45deg, rgb(160, 160, 1) 0px, rgb(245, 245, 122) 40px,
+  repeating-linear-gradient(45deg, rgb(122, 122, 3) 0px, rgb(250, 250, 5) 40px,
   rgb(54, 54, 54) 40px, black 80px);
   /* transform: skewX(45deg); */
   /* transform: skewY(-45deg); */
@@ -231,17 +159,23 @@ margin: 10px 0px 15px 0px;
 }
 
 /* Here the Eclipse starts -------------------------------------------->*/
+#eclipse {
+  display: flex;
+  justify-content: center;
+}
+
 .sun {
+  box-shadow: 0px 12px 100px 0px rgb(253, 186, 0);
   background-color: red;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   position: relative;
-  margin: 50px auto;
+  margin: 45px;
+  /* margin: 50px auto; */
 }
 
 .moon {
-  /* background-color: transparent; */
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -279,7 +213,7 @@ margin: 10px 0px 15px 0px;
 .heart-back {
   display: block;
   margin: 0 auto;
-  background-color: var(--background-form);
+  background-color: rgb(63, 63, 63);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -291,7 +225,7 @@ margin: 10px 0px 15px 0px;
 .heart {
   position: relative;
   margin: auto;
-  top: 40px;
+  top: 73px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -351,20 +285,20 @@ margin: 10px 0px 15px 0px;
   height: 50px;
   margin-top: 50px;
   animation-name: bounce;
-  animation-duration: 5s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   /* overflow: hidden; */
   z-index: 1;
 }
 
 #red {
-  background: rgba(255, 0, 0, 0.671);
+  background: rgba(255, 0, 0, 0.055);
   left: 27%;
   animation-timing-function: linear;
 }
 
 #blue {
-  background: rgba(0, 0, 255, 0.658);
+  background: rgba(0, 0, 255, 0.089);
   left: 68.5%;
   animation-timing-function: ease-out;
 }
@@ -373,7 +307,14 @@ margin: 10px 0px 15px 0px;
   0% {
     top: 0px;
   }
+
   100% {
-    top: 249px;
+    top: 100%;
   }
+}
+
+footer {
+  color: rgb(143, 143, 143); 
+  text-align: center;
+  margin-top: 30px;
 }
