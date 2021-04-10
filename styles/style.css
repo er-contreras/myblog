@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
-  /* border: 1px dashed grey; */
+  border: 1px dashed grey;
 }
 
 /* Here is the shortcut root? -------------------------------------- */
@@ -46,10 +46,21 @@ main {
 #myblog {
   /* box-shadow: 0px 12px 100px 0px rgb(1, 149, 168); */
   padding: 10px;
-  text-align: center;
+  /* text-align: center; */
   /* border-radius: 8px; */
   background: var(--background);
   font-size: 1.6rem;
+}
+
+#myblog h1 {
+  width: 160px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1:hover {
+  color: var(--hover);
+  cursor: pointer;
 }
 
 main nav {
@@ -79,11 +90,6 @@ nav a {
 
 article h2 {
   padding: 1rem;
-}
-
-h1:hover {
-  color: var(--hover);
-  cursor: pointer;
 }
 
 main figure {
